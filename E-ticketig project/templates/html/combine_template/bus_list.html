@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bus-list.css">
+    <script src="/js/home.js"></script>
+    <title>Buy E-Ticket</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    
+                    <img src="/images/logo.png" alt="">
+                    <p>StarLine Bus Service</p>
+                </div>
+                <!-- <p class="logo-txt">STAR LINE BD</p> -->
+            </div>
+            <div class="right">
+               <div class="profile" onclick="show_p_options()">
+                   <img src="/images/IMG_20220105_183432-02.jpeg" alt="">
+               </div>
+               <div class="profile-toggle d-none" id="profile-toggle">
+                   <ul>
+                        <li>
+                           <img src="/images/user.png" alt="">
+                           <a href="#">view profile</a>
+                        </li>
+
+                        <li>
+                            <img src="/images/logout.png" alt="">
+                           <a href="#">Log out</a>
+                        </li>
+
+                        <li>
+                            <img src="/images/history.png" alt="">
+                            <a href="#">Trip History</a>
+                        </li>
+                   </ul>
+               </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="container">
+        <div class="bus-list-container">
+            <div class="search-result">
+                <p>Search results for . . . </p>
+                <p>Feni - Dhaka (11th November, 2022)</p>
+            </div>
+
+            <div class="bus-list">
+
+                <div class="bus-list-header">
+                    <table>
+                        <tr>
+                            <td>Coach Info</td>
+                            <td>Deprature Time</td>
+                            
+                            <td>Bus No</td>
+                            <td>Seats</td>
+                           
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="buses">
+
+                    <div class="bus selected-bus">
+                        <div class="loader bus-loader" id="bus-loader">
+                            
+                           
+                        </div>
+                        <div class="refresh" id="refreshid">
+                            <button>Refresh</button>
+                        </div>
+                        
+                        <table class="bus-info-table">
+                            <tr>
+                                <td>
+                                    <p>Economy</p>
+                                    <p>Non AC</p>
+                                    
+                                </td>
+                                <td>
+                                    <p>11:00 AM Sun</p>
+                                    <p>11 November 2022</p>
+                                </td>
+                                <td>
+                                    <p>01</p>
+                                </td>
+                                <td>
+                                    <p>34 seats available</p>
+                                    <button>view seats</button>
+                                </td>
+                                
+                               
+                            </tr>
+                        </table>
+
+                        <div class="buy-seats">
+                           
+                            <table class="seat-table">
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter" >
+                                        <p>A1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>A2</p>
+                                    </td>
+                                    <td class="none"></td>
+                                    
+                                    <td class="occupied">
+                                        <p>A3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>A4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>B1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>B2</p>
+                                    </td>
+                                    <td class="none"></td>
+                                    
+                                    <td class="not-occupied">
+                                        <p>B3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>B4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>C1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>C2</p>
+                                    </td>
+                                    <td class="none"></td>
+                                    
+                                    <td class="not-occupied">
+                                        <p>C3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>C4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>D1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>D2</p>
+                                    </td>
+                                    <td class="none"></td>
+                                
+                                    <td class="not-occupied">
+                                        <p>D3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>D4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>E1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>E2</p>
+                                    </td>
+                                    
+                                    <td class="none"></td>
+                                    <td class="not-occupied">
+                                        <p>E3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>E4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>F1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>F2</p>
+                                    </td>
+                                    <td class="none"></td>
+                                    
+                                    <td class="not-occupied">
+                                        <p>F3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>F4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>G1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>G2</p>
+                                    </td>
+                                    
+                                    <td class="none"></td>
+                                    <td class="not-occupied">
+                                        <p>G3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>G4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>H1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>H2</p>
+                                    </td>
+                                    
+                                    <td class="none"></td>
+                                    <td class="not-occupied">
+                                        <p>H3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>H4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>I1</p>
+                                    </td>
+                                    <td class="for-counter" title="Occupied For Counter">
+                                        <p>I2</p>
+                                    </td>
+                                
+                                    <td class="none"></td>
+                                    <td class="not-occupied">
+                                        <p>I3</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>I4</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="none"></td>
+                                    <td class="none"></td>
+                                    
+                                    <td class="none"></td>
+                                    <td class="none"></td>
+                                    <td class="none"></td>
+                                </tr>
+                                <tr>
+                                    <td class="not-occupied">
+                                        <p>J1</p>
+                                    </td>
+                                    <td class="not-occupied">
+                                        <p>J2</p>
+                                    </td>
+                                    <td class="not-occupied"><p>J3</p></td>
+                                    <td class="not-occupied"><p>J4</p></td>
+                                    <td class="not-occupied">
+                                        <p>J5</p>
+                                    </td>
+                                    
+                                </tr>
+                            </table>
+
+                            <div class="price-section">
+
+                        
+                                <table class="price-table" id="price-table">
+                                    <tr>
+                                        <td>Seat Name</td>
+                                        <td>Price</td>
+                                        <td>Action</td>
+                                    </tr>
+                                
+                                    <tr id="t-a-t">
+                                        <td  class="total">Total</td>
+                                        <td colspan="2" id="total-amount"><p>0 TK</p></td>
+                                    </tr>
+                                </table>
+                                <small style="color:rgb(255, 102, 0);font-size:11px;">No seats were selected</small>
+
+                                <div class="boarding-point">
+                                    <label for="boarding_selector" style="opacity:.8;">Select Boarding Point</label>
+                                    <div class="p-wrapper">
+                                        <select name="boarding_selector" id="boarding_point">
+                                            <option>-------</option>
+                                            <option value="feni_main_station">Feni Main Station</option>
+                                            <option value="feni_mohipal_station">Feni Mohipal Statio</option>
+                                            <option value="feni_couddogram_station">Couddogram Station</option>
+                                            <option value="feni_cummilla_station">Cumilla Station</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="proceed-to-payment-btn">
+                                    <div class="loader-p-t-p " id="loader-p-t-p">
+                                    </div>
+                                    <button class="p-t-p loader-bus-p-t-p">Procced to payment</button>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bus ">
+                        <div class="loader" id="loader">
+                            
+                           
+                        </div>
+                        
+                        
+                        <table class="bus-info-table loader-bus">
+                            <tr>
+                                <td>
+                                    <p>Business</p>
+                                    <p> AC</p>
+                                </td>
+                                <td>
+                                    <p>1:00 PM Thus</p>
+                                    <p>11 November 2022</p>
+                                </td>
+                                <td>
+                                    <p>34 seats available</p>
+                                    <button>view seats</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bus ">
+                        
+                        
+                        
+                        <table class="bus-info-table">
+                            <tr>
+                                <td>
+                                    <p>Business</p>
+                                    <p> AC</p>
+                                </td>
+                                <td>
+                                    <p>1:00 PM Thus</p>
+                                    <p>11 November 2022</p>
+                                </td>
+                                <td>
+                                    <p>34 seats available</p>
+                                    <button>view seats</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bus ">
+                        
+                        
+                        
+                        <table class="bus-info-table">
+                            <tr>
+                                <td>
+                                    <p>Business</p>
+                                    <p> AC</p>
+                                </td>
+                                <td>
+                                    <p>1:00 PM Thus</p>
+                                    <p>11 November 2022</p>
+                                </td>
+                                <td>
+                                    <p>34 seats available</p>
+                                    <button>view seats</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bus ">
+                        
+                        
+                        
+                        <table class="bus-info-table">
+                            <tr>
+                                <td>
+                                    <p>Business</p>
+                                    <p> AC</p>
+                                </td>
+                                <td>
+                                    <p>1:00 PM Thus</p>
+                                    <p>11 November 2022</p>
+                                </td>
+                                <td>
+                                    <p>34 seats available</p>
+                                    <button>view seats</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                    
+
+                    
+
+
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+
+        
+            <div class="left">
+                <div class="about-start-line">
+                    <div class="a-s-l-title">
+                        <p><span>| A</span> BOUT STAR LINE</p>
+
+                    </div>
+                    <p class="address-txt">Green Line Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990. From a humble beginning of local services, our transport system encompasses all reachable areas of Bangladesh and also beyond the border, extending our reach to Kolkata in India.</p>
+                    </div>
+            </div>
+
+            <div class="mid">
+                <div class="mid-contents">
+
+                    
+                    <div class="quick-links">
+                        <div class="q-l-title">
+                            <p><span>| Q</span> UICK LINKS</p>
+                        </div>
+                        <div class="q-l">
+                            <ul>
+                                <li><span>></span><a class="color-green" href="#"> Home</a></li>
+                                <li><span>></span><a href="#"> Services</a></li>
+                                <li><span>></span><a href="#"> About Us</a></li>
+                                <li><span>></span><a href="#"> Contact Us</a></li>
+                                <li><span>></span><a href="#"> Query </a></li>
+                                <li><span>></span><a href="#"> Cancel Ticket</a></li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="address-bar">
+                    <div class="a-b-title">
+                        <p><span>| A</span> DDRESS</p>
+                        
+                    </div>
+                    <p class="address-txt">
+                        GreenLine Paribahan
+                        9/2, Outer Circular Road, Momen Bagh,
+                        Rajarbagh, Dhaka-1217
+                        Phone: 8315380
+                        Email: greenline2009@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <nav id="bottom-nav" class="main-nav bottom-nav">
+        <div class="b-n-container">
+
+            
+            <section class="counter-info" id="counter-info">
+                <div class="icon">
+                    <img src="/images/info.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Counter Infos</p>
+                </div>
+            </section>
+            <section class="cancel-tickets" id="cancel-tickets">
+                <div class="icon">
+                    <img src="/images/cancel.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Cancel Ticket</p>
+                </div>
+            </section>
+            <section class="nav-home active-nav" id="nav-home">
+                <div class="icon">
+                    <img src="/images/home.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Home</p>
+                </div>
+            </section>
+            <section class="trips" id="trips">
+                <div class="icon">
+                    <img src="/images/trips.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Trips</p>
+                </div>
+            </section>
+            <section class="options" id="options-settings">
+                <div class="icon">
+                   <img src="/images/settings.png" alt="">
+                      
+                </div>
+                <div class="icon-txt">
+                    <p>Optiions</p>
+                </div>
+            </section>
+        </div>
+    </nav>
+</body>
+</html>

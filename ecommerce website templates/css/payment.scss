@@ -1,0 +1,331 @@
+
+
+.shopping-navigator{
+  margin-top:2em;
+  display:flex;
+  justify-content:space-between;
+
+  .s-n-left{
+      p{
+          font-weight: 450;
+      }
+  }
+  .s-n-right{
+    display:flex;
+    align-items:center;
+    
+    .line-between{
+        margin:0 .5em;
+        width:50px;
+        height:3px;
+        border-radius:3px;
+        background:#cacaca;
+
+    }
+
+    .cart-icon, .delivery-icon{
+      border:1px solid #FBB03B;
+      width:25px;
+      height:25px;
+      border-radius: 50%;
+
+      svg{
+          margin-top:.35em;
+          margin-left:.4em;
+      }
+      
+      .c-i{
+          width:14px;
+          height:14px;
+          fill:#FBB03B ;
+      }
+    }
+
+    .delivery-icon{
+      border:none;
+      background:#FBB03B;
+      margin-right:.3em;
+      .d-i{
+        fill:white;
+      }
+
+      svg{
+        width:14px;
+        height:14px;
+      }
+    }
+
+    .l-1{
+      background:#FBB03B;
+    }
+
+      
+  }
+}
+
+.adress-payment-info{
+  margin-top:2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.payment-method{
+  margin-top:1.9em;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  
+}
+.adress-info{
+  display: flex;
+}
+
+
+.adress-info-input1, .adress-info-input2{
+  div{
+    input{
+      display: block;
+      margin:1em 1em;
+      width:250px;
+      height:30px;
+      padding:.3em 1em;
+      border:.5px solid #cacaca;
+      border-radius: 22px;
+    }
+  }
+}
+
+// select payment method
+
+.payment-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+ 
+  .payment-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+ 
+
+  .payment-container input:checked ~ .box {
+    border:2px solid #FBB03B;
+    -webkit-box-shadow: -4px 5px 15px -10px #000000; 
+    box-shadow: -4px 5px 15px -10px #000000;
+  }
+
+  .box:hover{
+      
+      -webkit-box-shadow: -4px 5px 15px -10px #000000; 
+      box-shadow: -4px 5px 15px -10px #000000;
+      transition-duration: .3s;
+  }
+  
+  
+
+  .box:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  
+
+  .payment-container input:checked ~ .box:after {
+    display: block;
+  }
+  
+
+.d-m{
+  text-align: center;
+  .texts{
+    margin-top:.5em;
+    font-size: .8em;
+
+    small{
+      color:#cacaca;
+      font-size: .6em;
+    }
+  }
+}
+
+.box{
+  width:80%;
+  height:100px;
+  border: .5px solid #cacaca;
+  border-radius: 12px;
+  padding:1em .6em;
+
+
+  
+}
+
+.payment-bottom{
+  margin-top:2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .step{
+    display: flex;
+    button{
+      padding:.3em 1.5em;
+      border:.5px solid #cacaca;
+      height:40px;
+      margin-left:1em;
+      border-radius: 22px;
+    }
+    
+  }
+
+}
+  .back-btn, .back-btn1{
+    display: flex;
+    img{
+      width:20px;
+
+    }
+    p{
+      margin-left:1em;
+    }
+  }
+
+  .back-btn1{
+    margin-top:1em;
+  }
+.next-step-btn{
+  background:#FBB03B;
+}
+// end select payment method
+.s-none{
+  display: none;
+}
+// media querys
+
+@media only screen and(max-width:1250px){
+  .adress-info{
+    input{
+    width:200px !important;
+    }
+  }
+}
+@media only screen and(max-width:1150px){
+  .adress-info{
+    input{
+      width:150px !important;
+    }
+  }
+}
+@media only screen and(max-width:1050px){
+  .adress-info{
+    input{
+      width:120px !important;
+    }
+  }
+}
+@media only screen and(max-width:950px){
+  .adress-payment-info{
+    display: block;
+    .adress-info{
+      display: flex;
+      justify-content: space-between;
+      
+      input{
+       width:300px !important;
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:850px){
+  .adress-info{
+
+    .adress-info-input1, .adress-info-input2{
+      input{
+      width:200px !important;
+      }
+    }
+
+    
+    // .choose-payment-option{
+    //   margin:2em 0;
+    //   padding-bottom: .5em;
+    //   display: block !important;
+    //   text-align: center;
+    //   p{
+    //     font-weight: 460;
+    //     font-size: 1em;
+        
+    //   }
+    //   border-bottom: .5px solid #cacaca;
+    // }
+    
+  }
+
+  .payment-container{
+    padding-left:0 !important;
+  }
+}
+
+@media only screen and(max-width:550px){
+
+  .s-n-right{
+    display:none !important;
+  }
+  .adress-info{
+    display: block !important;
+    .adress-info-input1, .adress-info-input2{
+      div{
+        input{
+          width:90% !important;
+        }
+      }
+    }
+  }
+
+  .adress-payment-info{
+    .payment-method{
+      grid-template-columns: 49% 49% ;
+      gap:1em !important;
+      
+    }
+    .payment-method{
+      padding-left:0 !important;
+    }
+
+    
+
+  }
+  .adress-info{
+    input{
+      margin-left:0 !important;
+    }
+  }
+  .payment-bottom{
+    display: block;
+    
+    .step{
+      justify-content: space-between;
+      button{
+        margin-left:0;
+      }
+    }
+  }
+  .back-btn{
+    display: none !important;
+  }
+}
+// end media querys
+

@@ -1,0 +1,261 @@
+.create-post-body{
+    .search-top{
+        width:80%;
+        
+        margin:2em auto;
+        text-align:center;
+
+        .s-top-logo{
+            img{
+                width:100px;
+                
+                color:rgb(78, 70, 70);
+            }
+        }
+
+        .s-top-titles{
+            p{
+                letter-spacing: .1em;
+                color:black;
+                margin-top:1em;
+                text-transform: uppercase;
+            }
+            .college-name{
+                
+                font-weight: 550;
+                
+            }
+            
+        }
+        .line{
+            width:130px;
+            height:1px;
+            background:black;
+            margin:auto;
+            
+        }
+    }
+
+    .search-middle{
+        width:80%;
+        margin:2em auto;
+
+        .input , .grade, .status{
+            align-items: center;
+            margin-bottom: 1.5em;
+            span{
+                display: block;
+                opacity: 80%;
+            }
+            input{
+                height:35px;
+                width:70%;
+                border:none;
+                border-radius: 30px;
+                outline:none;
+                background: #f5f5f5;
+                padding:0 1em;
+                padding-left:1.5em;
+                font-size: .7em;
+            }
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .grade, .status{
+            margin-top:1.5em;
+            justify-content: unset;
+            .label{
+                margin-right:17%;
+            }
+            .grade-point{
+                color:black;
+                
+            }
+        }
+
+        .status{
+            
+            .grade-status{
+                color:rgb(62, 201, 108);
+            }
+        }
+        .select-semester-option{
+            display: flex;
+            align-items: center;
+
+            .label{
+                opacity: 80%;
+            }
+
+            
+        }
+
+        .s-semester{
+           margin-left:2em;
+            border-radius: 30px;
+           
+           
+            
+            select{
+                border-radius: 30px;
+                height:35px;
+                width:150px;
+                border:none;
+                background: #f5f5f5;
+                padding:.3em;
+                padding-left:1em;
+                font-size:.75em;
+                outline:none;
+                font-size: .7em;
+                opacity: 60%;
+            
+            }
+            
+            padding-right:.5em;
+            width:fit-content;
+            background:#f1f1f1;
+        }
+
+        
+    }
+
+    .search-bottom{
+        width:80%;
+        text-align: center;
+        
+        margin:1em auto;
+        margin-bottom:2em;
+        button{
+            width:100px;
+            border:none;
+            height:30px;
+            border-radius: 4px;
+            background: #0093FF;
+            color:white;
+            font-weight: 545;
+            cursor: pointer;
+            
+        }
+    }
+}
+
+
+// media querys 
+
+
+@media only screen and (max-width: 955px) {
+    .right{
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .nav-right{
+        display:none !important;
+    }
+    .toggle{
+        display:unset;
+
+        
+    }
+
+    .left{
+        display:none;
+        height: 0 !important;
+    }
+
+    .ham-bar{
+        margin-bottom: .2em;
+    }
+
+    .right{
+        display:none;
+    }
+
+
+    .container{
+        display:unset !important;
+    }
+    .main{
+        width:90%;
+        margin:1em auto;
+    }
+    .back-btn{
+        min-width: unset !important;
+        max-width: unset !important;
+        width:100% !important;
+
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+
+    .create-post-body{
+        width:100% !important;
+        min-width:unset !important;
+        
+        
+    }
+
+
+
+    .main{
+       
+        width:95% !important;
+    }
+
+ 
+
+    .create-post-head{
+        margin-bottom:.5em;
+    }
+
+}
+
+@media only screen and(max-width:500px){
+    .input{
+        display: block !important;
+        input{
+            border-radius: 4px !important;
+            width:100% !important;
+        }
+        span{
+            margin-bottom: .2em;
+        }
+    }
+    .select-semester-option{
+        display: block !important;
+        .label{
+            margin-bottom: .2em;
+        }
+    }
+    .s-semester{
+        border-radius: 4px !important;
+        margin-left:unset !important;
+        select{
+            border-radius: 4px !important;
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 290px) {
+    .logo-text{
+        font-size:.8em !important;
+    }
+
+    .ham{
+        width:20px !important;
+        margin-top:.3em !important;
+    }
+
+
+
+
+
+
+}

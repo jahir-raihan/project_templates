@@ -1,0 +1,232 @@
+.search-add-bar{
+    display:grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: 1em;
+    
+
+    .input {
+        input{
+            height:35px;
+            width:95%;
+            border:none;
+            border-radius: 30px;
+            outline:none;
+            background: #f5f5f5;
+            padding:0 1em;
+            padding-left:1.5em;
+            font-size: .7em;
+        }
+
+    }
+
+}
+
+small{
+    opacity: 60%;
+    padding-right:1em;
+}
+
+.add-btn{
+    padding:0em 1em;
+    border:none;
+    border-radius: 30px;
+    color:white;
+    background:#6e7267;
+    cursor: pointer;
+}
+.add-btn:hover{
+    background:#0C82EF;
+    transition-duration: .1s;
+
+}
+
+.h-student{
+    display: grid;
+    grid-template-columns: 89% 10%;
+    gap:1%;
+    margin-top:1em;
+    
+   
+    .h-s-left{
+        padding:.3em;
+        display: flex;
+        border-radius: 4px;
+        .img{
+            margin-right:.5em;
+            img{
+                width:40px;
+                border-radius: 50%;
+            }
+        }
+        .name{
+            color:black;
+            font-weight: bold;
+            opacity: 70%;
+            
+            
+        }
+        small{
+            display:block;
+        }
+        
+    }
+}
+
+
+.h-s-left:hover{
+    background:#e2e2e248;
+    transition-duration: .2s;
+
+    
+    cursor: pointer;
+    -webkit-box-shadow: 9px 12px 17px -16px #000000; 
+    box-shadow: 9px 12px 17px -16px #000000;
+
+
+    small{
+        opacity: 100%;
+    }
+        
+}
+
+.hostel-students{
+    max-height:450px;
+    overflow-y: scroll;
+    padding-bottom:1em;
+    .h-student{
+        .odots{
+            cursor: pointer;
+            padding:.2em;
+            padding-top:1em;
+            padding-left:.43em;
+            display: flex;
+            width:35px;
+            height:35px;
+            border-radius: 50%;
+            
+            .dot{
+                margin-right:.2em;
+                
+                
+                width:5px;
+                height:5px;
+                border-radius: 50%;
+                background:rgba(0, 0, 0, 0.568);
+                
+            }
+        }
+        .odots:hover{
+            background:#e2e2e2;
+        }
+    }
+    
+}
+
+.option-toggle{
+    a{
+        font-size:.8em;
+    }
+}
+
+.student-detail{
+    padding:1em .3em;
+    p{
+        color:black;
+        font-size:.9em;
+        
+    }
+    display: flex;
+    .s-d-left{
+        margin-right:1em;
+        img{
+            width:80px;
+            border-radius: 50%;
+        }
+    }
+    .s-d-right{
+        
+        .name{
+            font-weight: bold;
+            color:black;
+            font-size: 1em;
+        }
+        p{
+            margin-bottom:.5em;
+            span{
+                font-weight: bold;
+            }
+        }
+
+        .select-starting-month{
+            span{
+                font-weight: bold;
+            }
+            select{
+                background:#e2e2e28c;
+                border:none;
+                padding:.3em 1em;
+                border-radius: 24px;
+                outline:none;
+            }
+        }
+    }
+}
+
+.search-btn{
+    background:#0C82EF;
+}
+.add-to-hostel-btn{
+    margin-top:1em;
+    background:#0C82EF;
+    padding:.3em 2em !important;
+}
+
+.update-fee-input{
+    input{
+        height:35px;
+        width:60%;
+        border:none;
+        border-radius: 30px;
+        outline:none;
+        background: #f5f5f5;
+        padding:0 1em;
+        padding-left:1.5em;
+        font-size: .7em;
+    }
+}
+
+
+.less-then-800{
+    color:black;
+    text-align: center;
+    
+}
+
+.paid-unpaid{
+    color:rgb(255, 123, 0);
+}
+.message{
+    border-radius: 4px;
+    color:rgb(255, 255, 255);
+    min-width:500px;
+    max-width:500px;
+    margin:0em auto;
+    margin-top:2em;
+    padding:.6em;
+    font-size: .8em;
+    background:rgb(0, 195, 255);
+}
+
+.disabled{
+    background:#e2e2e2;
+}
+.disabled:hover{
+    background:#e2e2e2;
+    cursor:unset;
+}
+
+
+.demo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}

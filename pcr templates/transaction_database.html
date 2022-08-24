@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/css/side_nav.css">
+    <link rel="stylesheet" href="/css/create.css">
+    <link rel="stylesheet" href="/hostel_system/css/hostel.css">
+    <link rel="stylesheet" href='/css/search_result.css'>
+    <link rel="stylesheet" href="/dashboard/css/dashboard.css">
+    <link rel="stylesheet" href="/dashboard/css/transaction.css">
+   
+    <title>Base template</title>
+    <script src="/base.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="/dashboard/transaction.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div class="nav-left">
+                <img id="logo" src="/images/Logo.jpg" alt="">
+                <p class="logo-text">Compact Polytechinc Institute</p>
+            </div>
+
+            <div class="nav-right">
+                <a href="#" style="margin-right:.8em">
+
+                    <div class="notification-icon">
+                    
+                        <img src="/images/bell.png" alt="">
+                        <p class="n-number">9</p>
+                        
+                    </div>
+                </a>
+
+                <div class="profile-icon">
+                    <img src="/images/joy.jpeg" alt="">
+                </div>
+            </div>
+
+            <div  class="toggle">
+                <div class="ham-bar"  onclick="myFunction()" title="menu">
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                </div>
+                
+
+                <div id="toggle-nav"  class="">
+
+                    <div class="contents">
+
+                    
+
+                        
+                        <div class="toggle-profile-link">
+                            <a href="#">
+                                <img src="images/joy.jpeg" alt="">
+                                <p class="name-title">Jahir Raihan</p>
+
+                            </a>
+                        </div>
+                        
+
+                        <div class="result-link">
+                            <div onclick="resultF()" class="title">
+                                <div onclick="rbg()" id="result-i-t" class="inner-title">
+                                    <p>Results</p>
+                                    <p>>></p>
+                                </div>
+                                
+                               
+                            </div>
+
+                            
+
+                            
+                            <div id="r-semesters"  class="semesters">
+                                <div class="r-s-c">
+                                    <ul>
+                                    
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           
+
+                        </div>
+                        
+                        <div class="exam-routines">
+                            <div onclick="routineF()" class="title">
+                                <div onclick="ebg()" id="exam-i-t" class="inner-title">
+                                    <p>Exam Routines</p>
+                                    <p>>></p>
+                                </div>
+                                
+                               
+                            </div>
+
+                            
+
+                            
+                            <div id="e-semesters"  class="semesters">
+                                <div class="r-s-c">
+                                    <ul>
+                                    
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           
+
+                        </div>
+                        <div class="inner-title">
+                            <p>Fee Info</p>
+                            <p>>></p>
+                        </div>
+
+                        <a href="upload_result.html">
+
+                            <div class="inner-title">
+                                <p>Upload Result</p>
+                                <p>>></p>
+                            </div>
+                        </a>
+
+                        <a href="upload_result.html">
+                            <div class="inner-title">
+                                <p>Upload Grade</p>
+                                <p>>></p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+                
+            </div>
+
+
+        
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="left">
+
+        
+
+            <div class="left-side">
+
+
+                <div class="side-profile-link">
+                    <a href="#">
+                        <img src="/images/joy.jpeg" alt="">
+                        <p class="name-title">Jahir Raihan Joy</p>
+
+                    </a>
+                </div>
+
+                <div class="result-link">
+                    <div onclick="sideresultF()" class="title">
+                        <div onclick="srbg()" id="side-result-i-t" class="side-inner-title">
+                            <img  src="/images/result.png" alt="">
+                            <p>Results</p>
+                            
+                        </div>
+                        
+                    
+                    </div>
+
+                    
+
+                    
+                    <div id="side-r-semesters"  class="semesters">
+                        <div class="r-s-c">
+                            <ul>
+                            
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                
+
+                </div>
+                
+                <div class="exam-routines">
+                    <div onclick="sideroutineF()" class="title">
+                        <div onclick="sebg()" id="side-exam-i-t" class="side-inner-title">
+                            <img src="/images/result.png" alt="">
+                            <p>Exam Routines</p>
+                            
+                        </div>
+                        
+                    
+                    </div>
+
+                    
+
+                    
+                    <div id="side-e-semesters"  class="semesters">
+                        <div class="r-s-c">
+                            <ul>
+                            
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                
+
+                </div>
+
+                <div class="side-inner-title">
+                    <img src="/images/accounting.png" alt="">
+                    <p>Fee Info</p>
+                    
+                </div>
+
+                <a href="upload_result.html">
+                    <div class="side-inner-title">
+                        <img src="/images/568717.svg" alt="">
+                        <p>Upload Result sheet</p>
+                        
+                    </div>
+                </a>
+
+                <a href="upload_result.html">
+                    <div class="side-inner-title">
+                        <img src="/images/568717.svg" alt="">
+                        <p>Upload Grade sheet</p>
+                        
+                    </div>
+                </a>
+
+            </div>
+            
+        </div>
+
+        <div class="main-body">
+
+            <div class="main">
+                <div class="links">
+                    <button class='link-btn1 '>Semester System</button>
+                    <button class='link-btn2 '>Hostel System</button>
+                    <button class='link-btn3 active'>Transaction Database</button>
+                </div>
+
+                <div class="dashboard-contents .create-post-body">
+
+                    <div class="filter-section">
+
+                        <div class="filter-toggle-btn">
+                            <div class="filter-toggle-left">
+                                <p>Filter</p>
+                            </div>
+
+                            <div class="filter-toggle-right" onclick="show_filter_toggle()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.064" height="13" viewBox="0 0 19.064 13">
+                                    <g id="Group_166" data-name="Group 166" transform="translate(-909.5 -303)">
+                                      <path id="Path_5" data-name="Path 5" d="M0,0H19.064" transform="translate(909.5 304.972)" fill="none" stroke="#707070" stroke-width="2"/>
+                                      <line id="Line_59" data-name="Line 59" x2="19.064" transform="translate(909.5 309.706)" fill="none" stroke="#707070" stroke-width="2"/>
+                                      <line id="Line_60" data-name="Line 60" x2="19.064" transform="translate(909.5 314.44)" fill="none" stroke="#707070" stroke-width="2"/>
+                                      <g id="Ellipse_19" data-name="Ellipse 19" transform="translate(921.185 303)" fill="#fff" stroke="#707070" stroke-width="1">
+                                        <circle cx="2" cy="2" r="2" stroke="none"/>
+                                        <circle cx="2" cy="2" r="1.5" fill="none"/>
+                                      </g>
+                                      <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(913.888 308)" fill="#fff" stroke="#707070" stroke-width="1">
+                                        <circle cx="2" cy="2" r="2" stroke="none"/>
+                                        <circle cx="2" cy="2" r="1.5" fill="none"/>
+                                      </g>
+                                      <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(921.185 312)" fill="#fff" stroke="#707070" stroke-width="1">
+                                        <circle cx="2" cy="2" r="2" stroke="none"/>
+                                        <circle cx="2" cy="2" r="1.5" fill="none"/>
+                                      </g>
+                                    </g>
+                                </svg>
+                                  
+                            </div>
+                        </div>
+
+                        <div id="filter-toggle"  class="filter-toggle d-none">
+
+                            <div class="f-t-content">
+
+                                <div class="f-t-title">
+
+                                    <p>**Filter by days</p>
+
+                                </div>
+                                <form>
+
+                                <div class="range">
+                                    
+                                    
+                                    <input type="range" class="range-slide" id="rangeslide" min="1" max="364">
+                                    
+
+                                    <p>Days : <small id="val"></small></p>
+                                    <script>
+                                        var slider = document.getElementById("rangeslide");
+                                        var output = document.getElementById("val");
+                                        output.innerHTML = slider.value; 
+
+                                        slider.oninput = function() {
+                                            output.innerHTML = this.value;
+                                        }
+                                    </script>
+                                </div>
+                                </form>
+
+                                <div class="filter-btn">
+                                    <button class="f-btn">Filter</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data">
+
+                        <div class="data-title">Today /</div>
+
+                        <div class="data-content">
+                            <p>Total Cash In : 5000 TK </p>
+                            <p>Total Cash Out : 800 TK</p>
+                        </div>
+                    </div>
+                    <div class="data">
+
+                        <div class="data-title">Last seven days /</div>
+
+                        <div class="data-content">
+                            <p>Total Cash In : 5000 TK </p>
+                            <p>Total Cash Out : 800 TK</p>
+                        </div>
+                    </div>
+                    <div class="data">
+
+                        <div class="data-title">Last month /</div>
+
+                        <div class="data-content">
+                            <p>Total Cash In : 5000 TK </p>
+                            <p>Total Cash Out : 800 TK</p>
+                        </div>
+                    </div>
+                    <div class="data">
+
+                        <div class="data-title">Last year /</div>
+
+                        <div class="data-content">
+                            <p>Total Cash In : 5000 TK </p>
+                            <p>Total Cash Out : 800 TK</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+                
+            
+            
+        </div>
+
+        <div class="right">
+
+            
+            <div class="right-side">
+                <small>Advartistment</small>
+                <a href="#">
+                    
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="/base.js"></script>
+
+</body>
+</html>

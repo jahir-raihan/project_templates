@@ -1,0 +1,79 @@
+.trips-data{
+    .trips-title{
+        font-size:15px;
+        opacity: .8;
+       
+    }
+    table{
+        margin:1.5em 0;
+        width:100%;
+        opacity: .8;
+        border-collapse: collapse;
+        td{
+            border:1px solid black;
+            padding:.5em;
+            text-align: center;
+            font-size:13px
+        }
+    }
+    .head-td{
+        font-size:14px ;
+        
+    }
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap:4%;
+}
+
+.search-f-b-container{
+    border:none !important;
+    box-shadow: none !important;
+    background:none !important;
+}
+
+// css for incomplete trips
+
+.incomplete-trips{
+    .trips-title{
+        color:#E05E3A;
+    }
+    table{
+       
+       
+       .head-td{
+           color:black;
+       }
+    }
+    table:hover{
+        -webkit-box-shadow: 0px 3px 14px -6px rgba(0,0,0,0.34); 
+        box-shadow: 0px 3px 14px -6px rgba(0,0,0,0.34);
+    }
+}
+// end css for imcomplete trips
+
+// media querys
+
+@media only screen and (max-width:800px){
+    .trips-data{
+        grid-template-columns: 100%;
+        gap:0;
+        td{
+            font-size:12px !important;
+        }
+        .head-td{
+            font-size:13px !important;
+        }
+    }
+}
+@media only screen and (max-width:400px){
+    .trips-data{
+        table{
+            td{
+                font-size:11px !important;
+            }
+            .head-td{
+                font-size:12px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,295 @@
+
+.container{
+    max-width: 1500px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 22% auto;
+    gap:1.5%;
+
+
+
+}
+
+
+// container main
+
+
+.main{
+    margin-top:2em;
+
+
+    .profile-body{
+        background:white;
+        width:95%;
+        padding:1em;
+        
+        margin:1em auto;
+        -webkit-box-shadow: -1px 3px 6px -3px rgba(0,0,0,0.84); 
+        box-shadow: -1px 3px 6px -3px rgba(0,0,0,0.84);
+        border-radius: 4px;
+
+
+    }
+}
+
+.profile-body{
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap:5%;
+
+    .profile-left{
+        
+        text-align: center;
+        .profile-img{
+            img{
+                width:150px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .user-results{
+        
+           small{
+               font-size:1em;
+               border-bottom: .5px solid rgba(0, 0, 0, 0.387);
+               
+               
+
+           }
+           
+           .results-info{
+               margin-top:1em;
+               ul{
+                   li{
+                       
+                       width:70%;
+                       margin:auto;
+                       display: flex;
+                       justify-content: space-between;
+                       margin-bottom: .5em;
+
+                   }
+               }
+           }
+        }
+    }
+}
+
+.about-title{
+    font-size:1.2em;
+    font-weight: bold;
+    color:rgb(74, 74, 74);
+    
+    margin-bottom: 1em;
+    margin-top:2em;
+   
+    
+}
+
+p{
+    color:rgba(0, 0, 0, 0.805);
+   
+}
+
+.student-info{
+    .student-name{
+        color:rgb(69, 69, 69);
+    }
+
+    
+    
+}
+
+
+.about{
+    
+    margin-top:2em;
+    .about-title{
+        border-bottom: 1px solid black;
+    }
+    
+}
+
+.basic-info{
+   .about-title{
+    border-bottom: 1px solid black;
+   }
+}
+
+.profile-right{
+    p{
+        margin-top:.5em;
+    }
+}
+
+
+
+span{
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.723);
+}
+
+.bottom{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+//back button
+
+.back-btn-ex{
+    
+    
+    max-width: 100px;
+    
+    margin-left:2%;
+    margin-top:2em;
+
+    .btn{
+        padding:.4em  .6em .4em .6em;
+        width:100px;
+        background:#0C82EF;
+        text-align:center;
+        border-radius: 4px;
+        p{
+            color:white;
+        }
+    }
+}
+
+
+
+// back button end
+
+// media querys
+
+
+@media only screen and (max-width: 800px) {
+
+    .nav-right{
+        display:none !important;
+    }
+    .toggle{
+        display:unset;
+
+        
+    }
+
+    .left{
+        display:none;
+        height: 0 !important;
+    }
+
+    .ham-bar{
+        margin-bottom: .2em;
+    }
+
+    .right{
+        display:none;
+    }
+
+
+    .container{
+        display:unset !important;
+    }
+    .main{
+        width:90%;
+
+        .back-btn{
+            width:100% !important;
+            
+        }
+        margin:1em auto;
+    }
+}
+
+
+@media only screen and (max-width: 675px) {
+
+    .profile-body{
+        width:100% !important;
+        min-width:unset !important;
+
+        text-align: center;
+        display:block;
+        
+        
+    }
+    .user-results{
+        display:none !important;
+    }
+
+    .profile-right{
+        margin-top:2em;
+    }
+
+    .bottom{
+        display:unset !important;
+        .result-title{
+            border-bottom: 1px solid black;
+        }
+        
+
+        .results-info{
+            li{
+                min-width:150px;
+                max-width: 200px;
+                width:60%;
+                margin:auto;
+                display:flex;
+                justify-content: space-between !important;
+            }
+        }
+    }
+
+    .about-title{
+        padding-left:0 !important;
+    }
+
+    p{
+        padding-top:.2em;
+        
+    }
+    
+
+    .main{
+        
+        width:95% !important;
+    }
+    
+
+
+
+}
+
+
+
+@media only screen and (max-width: 290px) {
+    .logo-text{
+        font-size:.8em !important;
+    }
+
+    .ham{
+        width:20px !important;
+        margin-top:.3em !important;
+    }
+
+
+    .profile{
+
+        .u-name{
+            font-size:.8em !important;
+        }
+        .category{
+            font-size:.6em !important;
+        }
+    }
+
+}

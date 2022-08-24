@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.064" height="13" viewBox="0 0 19.064 13">
+  <g id="Group_166" data-name="Group 166" transform="translate(-909.5 -303)">
+    <path id="Path_5" data-name="Path 5" d="M0,0H19.064" transform="translate(909.5 304.972)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_59" data-name="Line 59" x2="19.064" transform="translate(909.5 309.706)" fill="none" stroke="#707070" stroke-width="2"/>
+    <line id="Line_60" data-name="Line 60" x2="19.064" transform="translate(909.5 314.44)" fill="none" stroke="#707070" stroke-width="2"/>
+    <g id="Ellipse_19" data-name="Ellipse 19" transform="translate(921.185 303)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(913.888 308)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+    <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(921.185 312)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="2" cy="2" r="2" stroke="none"/>
+      <circle cx="2" cy="2" r="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+.search-f-b-container{
+    margin-top:10% !important;
+    input{
+        cursor:text !important;
+    }
+    .s-b-head{
+        img{
+            width:70px;
+            height:70px;
+        }
+        p{
+            font-size:15px !important;
+        }
+    }
+}
+
+.opt-input{
+    opacity: .7;
+}
+.btn{
+    text-align: center;
+}
+.login-reg-btn{
+    width:150px !important;
+}
+
+.register-link{
+    margin-top:1.5em;
+    font-size:12px;
+    a{
+        color:black;
+    }
+    span{
+        color:rgb(255, 154, 23);
+    }
+}
+.register-link:hover{
+    a{
+        color:rgb(12, 169, 248);
+        text-decoration: underline;
+    }
+    span{
+        color:rgb(12, 169, 248);
+    }
+}

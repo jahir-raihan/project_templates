@@ -1,0 +1,90 @@
+.p-wrapper{
+    input{
+        cursor:unset !important;
+    }
+    #opt-txt{
+        width:100%;
+        min-width:100%;
+        
+        border:none;
+        max-height: 50px;
+        min-height: 50px;
+        outline:none;
+
+    }
+}
+.cancel-ticket-container{
+    display:grid;
+    grid-template-columns:49% 49%;
+    gap:2%;
+}
+
+.ad-container{
+    .ad-c-img-mask{
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:linear-gradient(rgba(236, 105, 105, 0.565), rgba(152, 152, 152, 0.575), rgba(248, 155, 239, 0.599));
+        top:0;
+
+        .refund-head{
+            width:fit-content;
+            margin:auto;
+            margin-top:1em;
+            opacity: .9;
+            p{
+                font-size:16px;
+                color:white;
+                font-weight: 500;
+                border-bottom: 1px solid rgba(252, 252, 252, 0.304);
+            }
+        }
+        .steps{
+            color:white;
+            font-weight: 500;
+            font-size:15px;
+            width:80%;
+            margin:1em auto;
+
+        }
+        ul{
+            list-style:circle;
+            width:70%;
+            margin:auto;
+            color:white;
+            font-size: 14px;
+        }
+        .note{
+            
+            margin:10% auto 0 auto;
+            
+            
+            .policy-txts{
+                color:white;
+                font-size:14px;
+                width:70%;
+                margin:auto;
+            }
+        }
+    }
+}
+
+
+// disable css
+.disabled{
+    border: 1.5px solid rgba(0, 0, 0, 0.196) !important;
+    cursor:not-allowed;
+
+    opacity:.7 !important;
+    .label{
+        opacity:.7 !important;
+    }
+}
+
+// media queryes
+
+@media only screen and(max-width:800px){
+    .cancel-ticket-container{
+        grid-template-columns: 100% !important;
+    }
+}

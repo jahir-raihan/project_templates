@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: .5em;
+  text-align: center;
+  border: 1px solid black;
+}
+
+th {
+  font-size: 14px;
+  width: 150px;
+}
+
+td {
+  font-size: 13px;
+}
+
+.roll-no {
+  width: 80px;
+}
+
+.roll-no2 {
+  width: 120px;
+}
+
+.s-n {
+  width: 50px;
+}
+
+.container {
+  width: 1300px;
+  margin: 2em auto;
+}
+
+.container .heading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+.container .heading h2 {
+  font-size: 20px;
+  margin-bottom: .5em;
+}
+
+.container .heading h3 {
+  font-size: 16px;
+  margin-bottom: .5em;
+}
+
+.container .heading p {
+  margin-bottom: .3em;
+}
+
+.b-td {
+  border: none;
+}
+
+.s-names {
+  width: 280px;
+}
+
+.instruction {
+  position: fixed;
+  background: white;
+  -webkit-box-shadow: -10px 2px 50px -8px rgba(0, 0, 0, 0.568);
+  box-shadow: -10px 2px 50px -8px rgba(0, 0, 0, 0.562);
+  z-index: 2;
+  padding: .5em;
+  border-radius: 2px;
+  top: 5px;
+  left: 5px;
+}
+
+.instruction table th, .instruction table td {
+  font-size: 10px !important;
+  width: 115px;
+}
+
+.instruction small {
+  color: #ff8800;
+  display: block;
+  margin: .5em 0;
+}
+
+@media only screen and (max-width: 1250px) {
+  .instruction {
+    display: none;
+  }
+}
+/*# sourceMappingURL=bokeya_sheet.css.map */

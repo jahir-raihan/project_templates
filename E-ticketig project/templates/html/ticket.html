@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="/css/ticket.css">
+    <script>
+        
+        function download(){
+            document.getElementById('download').style.display='none';
+            window.print();
+            document.getElementById('download').style.display='block';
+        }
+    </script>
+    <title>Ticket</title>
+</head>
+<body>
+    
+    <div class="ticket-container">
+
+        <div class="ticket">
+            <div class="ticket-header">
+                <p>Jahir Raihan Joy - 01687277560</p>
+                <p>Invoice ID : asdyoewrksdfksdfasdfasdf</p>
+            </div>
+
+            <div class="ticket-body">
+
+                <div class="sec-1">
+                    <div class="box">
+                        <p class="box-con"><span>Date : </span> 12 July, 2022</p>
+                    </div>
+                    <div class="box">
+                        <p class="box-con"><span>Time : </span> 11:30 PM, Saturday</p>
+                    </div>
+                    <div class="box">
+                        <p class="box-con"><span>From : </span>Feni</p>
+                    </div>
+                    <div class="box">
+                        <p class="box-con"><span>To : </span> Dhaka</p>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <div class="sec-1">
+                    <div class="boarding-point-head">
+                        <p>Boarding Point</p>
+                    </div>
+                    <p class="b-point">Mohipal Terminal Station (Time + 10 minutes)</p>
+                    <p class="bus-no"><span>Bus No : </span>01</p>
+                    <div class="seats box">
+                        <div class="seat">
+                            <p>Seats  </p>
+                            <div class="seat-container">
+
+                                
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                                <span class="s-name">A1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-1">
+                    <div class="qr-code" id="qr-code">
+
+                    </div>
+                </div>
+            </div>
+            <div class="ticket-footer">
+                <div class="company-logo">
+                    <div class="logo">
+                        <img src="/images/logo.png" alt="star line logo">
+                        <p>StarLine Bus Services (Ticket)</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="download" id="download">
+            <button onclick="download()">Download</button>
+        </div>
+
+    </div>
+  <script>
+   var qrc = new QRCode(
+        document.getElementById("qr-code"),
+        "https://www.wissamfawaz.com/index.htm"
+      );
+  </script>
+</body>
+</html>

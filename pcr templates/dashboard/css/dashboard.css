@@ -1,0 +1,211 @@
+.dashboard-contents {
+    background: white;
+    min-width: 500px;
+    max-width: 500px;
+    padding: .6em;
+    
+    margin: 2em auto;
+    -webkit-box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+    box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+    border-radius: 4px;
+  }
+
+.links{
+    
+    min-width: 500px;
+    max-width: 500px;
+    padding: .6em;
+    padding-left:0;
+    margin: 2em auto;
+    display: flex;
+
+    border-radius: 4px;
+}
+
+.links button {
+    border-radius: 22px;
+    margin-right:1em;
+    background:#d3d3d3;
+    padding:.3em 1em;
+    cursor: pointer;
+    
+
+}
+.update-hostel-data button{
+    border-radius: 22px;
+    
+}
+.links button:hover{
+    transition-duration: .2s;
+    background:#0C82EF !important;
+    color:white;
+    -webkit-box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+    box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+}
+
+.active{
+    background:#0C82EF !important;
+    color:white;
+    -webkit-box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+    box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+    
+}
+.d-c-btn{
+    border-radius: 4px;
+    
+    background:#d3d3d3;
+    padding:.3em .5em;
+    cursor: pointer;
+}
+.d-c-btn:hover{
+    transition-duration: .2s;
+    background:#0C82EF !important;
+    color:white;
+
+}
+
+
+
+.d-c-title{
+    
+    margin:.5em 0;
+    color:black;
+    
+    padding:.5em .3em;
+}
+
+.d-c-title-u-h-data{
+    color:black;
+    padding:.3em ;
+}
+.update-hostel-data{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    
+    padding-top:.5em;
+    
+}
+.update-hostel-data button{
+    margin-left:5em;
+}
+a{
+    color:unset !important;
+}
+.line{
+    width:100%;
+    margin:2em 0em;
+    height:.5px;
+    background:black;
+    color:rgb(44, 216, 44);
+}
+
+.college-system-heading{
+  
+    padding:.3em;
+}
+
+.college-system-heading h4{
+    border-bottom: .5px solid black;
+    width:fit-content;
+}
+
+#overlay1 , #overlay2 , #overlay3 , #overlay4 {
+    overflow-y:scroll;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: 2;
+    
+  }
+
+.confirm-text{
+    color:#ff961d;
+    display: block;
+    margin-bottom: 1.5em;
+}
+#overlay1{
+    display: block;
+    
+}
+
+  #overlay-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    
+    width:80%;
+    height: 70vh;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+
+.cross{
+    position: absolute;
+    top: 8%;
+    right:3%;
+    cursor: pointer;
+    width:40px;
+    
+    height: 40px;
+    background:white;
+    padding-left:.65em;
+    padding-top:.6em;
+    border-radius: 50%;
+    -webkit-box-shadow: -1px 1px 6px -3px rgba(0, 0, 0, 0.959);
+    box-shadow: -1px 1px 6px -3px rgba(0, 0, 0, 0.959);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+
+}
+
+.overlay-body{
+    
+    box-shadow: 0px 0px 136px 33px rgba(0, 0, 0, 0.214);
+-webkit-box-shadow: 0px 0px 136px 33px rgba(0,0,0,0.214);
+-moz-box-shadow: 0px 0px 136px 33px rgba(0,0,0,0.214);
+}
+
+.image-input{
+    padding-top:.8em !important;
+}
+
+
+@media only screen and (max-width:450px){
+    .cross svg{ 
+        width:15px;
+        height: 15px;
+    }
+    .cross{
+        width:30px;
+        height: 30px;
+        padding-left:.5em;
+        padding-top:.3em;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+   .dashboard-contents .input input{
+       border-radius: 22px !important;
+   }
+   .dashboard-contents button{
+       font-size:.7em !important;
+   }
+}
+@media only screen and (max-width:300px){
+   .dashboard-contents .input input{
+       border-radius: 22px !important;
+   }
+   .dashboard-contents button{
+       font-size:.5em !important;
+   }
+}

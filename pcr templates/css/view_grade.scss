@@ -1,0 +1,57 @@
+.g-t{
+    font-weight: 500;
+}
+
+.main1{
+    padding:1em;
+    border-radius: 8px;
+    -webkit-box-shadow: -1px 3px 6px -3px rgba(0,0,0,0.84); 
+        box-shadow: -1px 3px 6px -3px rgba(0,0,0,0.84);
+    margin-bottom:2em;
+    background:rgba(255, 255, 255, 0.356);
+    .grade-table{
+        text-align:center;
+        border-bottom: 1px solid black;
+
+    }
+
+
+}
+
+.g-table-p{
+    color:black;
+    
+}
+.grades{
+    margin-top:1em;
+}
+
+.table{
+    display: flex;
+    div{
+        border:1px solid black;
+        text-align: center;
+        width:40%;
+        border-bottom:none;
+    }
+    .b{
+        border-left:none;
+    }
+}
+
+.back-btn-ex{
+    
+    
+    max-width: 100px;
+    
+    margin-top:2em;
+    margin-bottom:2em;
+
+    .btn{
+        padding:.4em  .6em .4em .6em;
+        width:100px;
+        background:#0C82EF;
+        text-align:center;
+        border-radius: 4px;
+    }
+}

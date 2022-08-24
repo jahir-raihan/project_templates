@@ -1,0 +1,115 @@
+
+.buy-seats{
+    display:flex;
+    justify-content: space-around;
+
+    margin: 1em 0;
+}
+
+.buy-seats .seat-table{
+    border-spacing: 4px;
+    width:250px;
+    max-height:488px;
+
+    td{
+        border:1px solid black;
+        width:40px !important;
+        height:40px !important;
+        min-width:40px;
+        min-height: 40px;
+        text-align: center;
+        border-radius: 2px;
+        font-size:13px;
+        
+        
+    }
+    tr{
+        margin-top:.5em !important;
+    }
+    .not-occupied:hover{
+        background:rgb(12, 169, 248) !important;
+        cursor: pointer;
+        color:white !important;
+        border:1px solid rgb(186, 186, 186) !important;
+        -webkit-box-shadow: -1px 0px 15px 1px rgba(0,0,0,0.12); 
+        box-shadow: -1px 0px 15px 1px rgba(0,0,0,0.12);
+    }
+}
+
+
+.price-table{
+    height:fit-content !important;
+    margin: auto !important;
+    
+    border-collapse: collapse !important;
+    td{
+        border:1px solid black;
+        width:100px !important;
+        min-width:80px;
+        min-height:30px;
+        height:30px;
+        padding:.3em;
+        font-size:13px;
+        text-align: center !important;
+    }
+    td{
+        width:100px ;
+       
+        
+        
+    }
+    .s-name{
+        background:rgb(12, 169, 248);
+        color:white;
+        width:30px;
+        padding:.5em;
+        margin: auto;
+        -webkit-box-shadow: -1px 0px 15px 1px rgba(0,0,0,0.12); 
+        box-shadow: -1px 0px 15px 1px rgba(0,0,0,0.12);
+    }
+    .cancel{
+        background:red;
+        margin:auto;
+        width:fit-content;
+        color:white;
+        padding:.2em .3em;
+        border-radius: 4px;
+        cursor:pointer;
+    }
+    .total{
+        text-align: right;
+        padding-right:1em !important;
+        
+        
+    }
+    #total-amount{
+        text-align:center;
+        font-weight: bold;
+    }
+
+    
+}
+
+
+
+// operational css
+.none{
+    border:none !important;
+}
+.occupied{
+    background:rgba(255, 122, 14, 0.846);
+    color:rgb(255, 255, 255);
+    border:none;
+    cursor:not-allowed;
+    
+}
+.for-counter{
+    background:rgb(147, 147, 147);
+    color:white;
+    border:none;
+    cursor:no-drop;
+    
+    p{
+        opacity: .8;
+    }
+}

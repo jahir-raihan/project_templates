@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/cancel_ticket.css">
+    <link rel="stylesheet" href="/css/search_bus.css">
+    <link rel="stylesheet" href="/css/add_routing.css">
+    
+    <link rel="stylesheet" href="/css/trips.css">
+    <script src="/js/home.js"></script>
+    <title>Buy E-Ticket</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    
+                    <img src="/images/logo.png" alt="">
+                    <p>StarLine Bus Service</p>
+                </div>
+                <!-- <p class="logo-txt">STAR LINE BD</p> -->
+            </div>
+            <div class="right">
+               <div class="profile" onclick="show_p_options()">
+                   <img src="/images/IMG_20220105_183432-02.jpeg" alt="">
+               </div>
+               <div class="profile-toggle d-none" id="profile-toggle">
+                   <ul>
+                        <li>
+                           <img src="/images/user.png" alt="">
+                           <a href="#">view profile</a>
+                        </li>
+
+                        <li>
+                            <img src="/images/logout.png" alt="">
+                           <a href="#">Log out</a>
+                        </li>
+
+                        <li>
+                            <img src="/images/history.png" alt="">
+                            <a href="#">Trip History</a>
+                        </li>
+                   </ul>
+               </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="container">
+        <div class="search-for-bus">
+            <!-- <div class="back-btn-container">
+                <button class="back-btn">Back</button>
+            </div> -->
+            
+            <div class="search-f-b-container add-routing-container">
+                
+                <div class="s-b-head">
+                    <p>Current Trips & History</p>
+                </div>
+
+                <div class="trips-data">
+
+                    <div class="left-trips-table">
+
+                        <div class="current-trips incomplete-trips">
+                            <p class="trips-title">
+                                Future Trips
+                            </p>
+                            <table>
+                                <tr>
+                                    <td class="head-td">
+                                        Destination
+                                    </td>
+                                    <td class="head-td">
+                                        Time & Date
+                                    </td>
+                                    
+                                    <td class="head-td">
+                                        Bus No & Seats 
+                                    </td>
+                                    <td class="head-td">
+                                        Boarding Point
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                
+                            </table>
+
+                        </div>
+
+                        <div class="recent-trips">
+                            <p class="trips-title">
+                                Recent Trips
+                            </p>
+                            <table>
+                                <tr>
+                                    <td class="head-td">
+                                        Destination
+                                    </td>
+                                    <td class="head-td">
+                                        Time & Date
+                                    </td>
+                                    
+                                    <td class="head-td">
+                                        Bus No & Seats 
+                                    </td>
+                                    <td class="head-td">
+                                        Boarding Point
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="right-trips-table">
+
+                        <div class="history">
+                            <p class="trips-title">
+                                Trips History
+                            </p>
+                            <table>
+                                <tr>
+                                    <td class="head-td">
+                                        Destination
+                                    </td>
+                                    <td class="head-td">
+                                        Time & Date
+                                    </td>
+                                    
+                                    <td class="head-td">
+                                        Bus No & Seats 
+                                    </td>
+                                    <td class="head-td">
+                                        Boarding Point
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Feni - Dhaka
+                                    </td>
+                                    <td>
+                                        11:00 PM , 11 July, 2022
+                                    </td>
+                                   
+                                    <td>
+                                        01 - A1
+                                    </td>
+                                    <td>
+                                        Mohipal Station
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+   
+    
+   <nav id="bottom-nav" class="main-nav bottom-nav" style="z-index:2">
+        <div class="b-n-container">
+
+            
+            <section class="counter-info" id="counter-info">
+                <div class="icon">
+                    <img src="/images/info.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Counter Infos</p>
+                </div>
+            </section>
+            <section class="cancel-tickets" id="cancel-tickets">
+                <div class="icon">
+                    <img src="/images/cancel.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Cancel Ticket</p>
+                </div>
+            </section>
+            <section class="nav-home " id="nav-home">
+                <div class="icon">
+                    <img src="/images/home.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Home</p>
+                </div>
+            </section>
+            <section class="trips active-nav" id="trips">
+                <div class="icon">
+                    <img src="/images/trips.png" alt="">
+                </div>
+                <div class="icon-txt">
+                    <p>Trips</p>
+                </div>
+            </section>
+            <section class="options" id="options-settings">
+                <div class="icon">
+                   <img src="/images/settings.png" alt="">
+                      
+                </div>
+                <div class="icon-txt">
+                    <p>Optiions</p>
+                </div>
+            </section>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.main {
+  background: rgba(255, 255, 255, 0.356);
+  padding: 1em;
+  border-radius: 8px;
+  -webkit-box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+  box-shadow: -1px 3px 6px -3px rgba(0, 0, 0, 0.84);
+  margin-bottom: 2em;
+}
+
+.exam-title {
+  text-align: center;
+}
+
+.e-t-f {
+  font-weight: 500;
+}
+
+.results-table {
+  margin-top: 1em;
+  border-bottom: 1px solid black;
+}
+
+.results-table .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.results-table .table div {
+  width: 30%;
+  margin-left: .1px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.results-table .table .b {
+  border-left: none;
+  border-bottom: none;
+}
+
+.results-table .table .student-name {
+  border-bottom: none;
+}
+
+.results-table .table .r-table {
+  color: black;
+  padding: .3em 1em;
+}
+
+.table:hover {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  background: #e2e2e2;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 390px) {
+  .student-name {
+    display: none !important;
+  }
+  .b {
+    border: .5px solid black !important;
+  }
+  .table div {
+    width: 37% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .r-table {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=result.css.map */

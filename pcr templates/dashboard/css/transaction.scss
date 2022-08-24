@@ -1,0 +1,116 @@
+p{
+    color:black;
+}
+
+.d-none{
+    display: none;
+}
+
+.filter-section{
+    padding:.2em .5em;
+    background:#ededed;
+    border-radius: 4px;
+   
+    .filter-toggle-btn{
+        
+        display: flex;
+        justify-content: space-between;
+        
+        border-radius: 4px;
+
+        .filter-toggle-right{
+            cursor: pointer;
+
+        }
+    }
+    .filter-toggle{
+        
+       
+        padding-bottom: .5em;
+        width:100%;
+        .f-t-title{
+            p{
+               margin-top:1em;
+               font-size:.9em;
+               margin-bottom: .5em;
+               color:rgb(15, 207, 255);
+            }
+        }
+        .range{
+            
+            
+            
+            
+            p{
+                margin:.5em 0;
+                font-size:.9em;
+            }
+        }
+        .filter-btn{
+            width:fit-content;
+            margin:auto;
+            margin-top:1em;
+        }
+        .f-btn{
+            cursor: pointer;
+            padding:.2em 2em;
+            border-radius: 4px;
+            background:#0C82EF;
+            color:white;
+            width:fit-content;
+           
+        }
+    }
+
+}
+
+.data{
+    
+    .data-title{
+        margin:1em 0;
+        
+    }
+    .data-content{
+        border:.5px solid black;
+        border-radius: 2px;
+        padding:.5em 1em;
+        p{
+            font-size:.8em;
+            margin-bottom: .3em;
+        }
+    }
+}
+
+
+.range-slide {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.39);
+    outline: none;
+    opacity: 0.7;
+    border-radius:4px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.range-slide:hover {
+    opacity: 1;
+}
+  
+.range-slide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    background: #0C82EF;
+    cursor: pointer;
+}
+  
+.range-slide::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}

@@ -1,0 +1,104 @@
+// css random for adding routes
+.add-routing-container{
+    
+   max-width: 100% !important;
+}
+.back-btn-container{
+    width:100%;
+    
+    margin:auto;
+    margin-bottom: 1em;
+}
+
+.search-for-bus{
+    margin-top:2em;
+}
+
+.destination{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap:4%;
+    margin-bottom: .5em;
+}
+
+.add-route-h-title{
+    margin-bottom: 1em !important;
+}
+// end random css 
+
+// button css
+.back-btn, .add-new-sub-station button, .create-route-confirm button{
+    border:none;
+    width:100px;
+    cursor: pointer;
+    padding:.3em .5em;
+    background:#008cff;
+    border-radius: 4px;
+    color:white;
+    -webkit-box-shadow: 0px 3px 15px -6px rgba(0,0,0,0.84); 
+    box-shadow: 0px 3px 10px -6px rgba(0,0,0,0.84);
+    font-size:13px;
+}
+.add-new-sub-station button{
+    margin:1em 0;
+    background:#2dbe60;
+    width:fit-content;
+}
+.create-route-confirm{
+    width:fit-content;
+    position: relative;
+    margin:1em auto .5em auto;
+}
+.new-elem{
+    .new{
+        font-size:13px;
+        color:#2dbe60;
+    }
+    margin:1.5em 0 1em 0;
+}
+
+//end button css
+// loader css
+.loader-bus-c-r-c{
+    background: #f3f3f3 !important;
+    box-shadow: none !important;
+    color:rgba(0, 0, 0, 0.593) !important;
+    
+    p{
+        opacity: .6 ;
+    }
+      
+    
+    
+}
+.loader-bus-c-r-c:hover{
+    cursor:progress !important;
+    box-shadow: none !important;
+
+}
+.loader-c-r-c{
+    border:4px solid #f3f3f3;
+    border-top:4px solid black;
+    border-right:4px solid black;
+    position:absolute;
+    width:15px;
+    height:15px;
+    right:42%;
+    top:25%;
+    border-radius: 50%;
+    animation:spin .5s linear infinite;
+    
+}
+
+.loader-d-none{
+    display: none;
+}
+// end loader css
+
+// media querys
+
+@media only screen and(max-width:800px){
+    .destination{
+        grid-template-columns: 100%;
+    }
+}

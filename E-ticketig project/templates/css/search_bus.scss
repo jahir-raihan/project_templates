@@ -1,0 +1,223 @@
+.search-for-bus{
+    margin:7% 0 15% 0;
+    
+    // display: grid;
+    grid-template-columns: 50% 50%;
+    .search-f-b-container{
+        background-color: white;
+        border:1px solid rgba(0, 0, 0, 0.174);
+        -webkit-box-shadow: 0px 3px 15px -6px rgba(0,0,0,0.54); 
+        box-shadow: 0px 3px 15px -6px rgba(0,0,0,0.54);
+        width:100%;
+        max-width:550px;
+       
+        border-radius: 4px;
+        margin:auto;
+        padding:1em;
+        .s-b-head{
+            width:fit-content;
+            margin:1em auto 1.5em auto;
+            text-align: center;
+            opacity: .6;
+            p{
+                font-size:16px;
+                font-weight: 500;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.304);
+            }
+        }
+        font-size:16px;
+
+        .s-b-f,.starting-point{
+            .input{
+                position: relative;
+                lable{
+                    display: block;
+                    
+                    
+                }
+                
+                
+                .p-wrapper{
+                    margin:.5em 0 1.5em 0;
+                    border:1.5px solid rgba(0, 0, 0, 0.196);
+                    width:100%;
+                    border-radius: 4px;
+                    padding-right:.5em;
+                    padding:.2em .5em;
+                    position: relative;
+                    -webkit-box-shadow: 0px 3px 15px -6px rgba(0,0,0,0.24); 
+                    box-shadow: 0px 3px 10px -6px rgba(0,0,0,0.24);
+                    select{
+                        width:100%;
+                        border:none;
+                        height:30px;
+                        outline:none;
+                        cursor: pointer;
+                        
+                    }
+                    input{
+                        width:100%;
+                        height:30px;
+                        border:none;
+                        padding:0 .5em;
+                        outline:none;
+                        cursor: pointer;
+                        z-index:2;
+                        background: transparent;
+                        display: block;
+                    }
+                    display: flex;
+                    align-items: center;
+                    img{
+                        position: absolute;
+                        right:10px;
+                        display: block;
+                        width:20px;
+                        height:20px;
+                    }
+                }
+                .p-wrapper:hover{
+                    border:1.5px solid black;
+                }
+              
+            }
+            .btn{
+                width:100%;
+                margin:2em 0 0 0;
+                
+                button{
+                    width:100%;
+                    cursor: pointer;
+                    height:35px;
+                    border:none;
+                    background:#008cff;
+                    color:white;
+                    border-radius: 4px;   
+                     -webkit-box-shadow: 0px 3px 15px -6px rgba(0,0,0,0.84); 
+                    box-shadow: 0px 3px 10px -6px rgba(0,0,0,0.84);
+                    
+                    
+                    
+                    .i-btn{
+                        width:fit-content;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        img{
+                        
+                            display: block;
+                            width:15px;
+                            height:15px;
+                            
+                        }
+                    }
+                    p{
+                        margin-left:.5em;
+                    }
+                    
+                    
+                    
+                }
+
+            }
+
+        }
+
+    }
+    .ad-container{
+        width:100%;
+        border:1px solid rgba(183, 183, 183, 0.28);
+        height:100%;
+        position: relative;
+        border-radius: 4px;
+        max-width:550px;
+        -webkit-box-shadow: 0px 3px 15px -6px rgba(0,0,0,0.24); 
+        box-shadow: 0px 3px 15px -6px rgba(0,0,0,0.24);
+        
+    
+        img{
+            width:100%;
+            height:100%;
+            object-position: center;
+            object-fit: cover;
+            min-width:300px;
+            border-radius: 4px;
+        }
+        
+        
+    }
+}
+
+.s-f-b-btn{
+    position:relative;
+}
+.s-f-b-l{
+    width:17px ;
+    height:17px ;
+    border:3px solid white;
+    border-top:3px solid black;
+    border-right:3px solid black;
+}
+
+.warning-invalid{
+    color:rgb(255, 149, 0);
+    font-size:10px;
+    position: absolute;
+    bottom:-20px;
+    left:5px;
+}
+
+.error-msg-btn{
+    width:200px !important;
+    margin:2em auto 0 auto !important;
+}
+.error-msg-btn-p{
+    font-size:14px;
+    text-align: center;
+    
+}
+// media querys
+
+
+
+@media only screen and(max-width:800px){
+  .search-for-bus{
+      margin:20% 0;
+    
+      .ad-container{
+          display: none;
+      }
+      grid-template-columns: 100%;
+  }
+    
+}
+@media only screen and(max-width:650px){
+    .search-for-bus{
+        margin:25% 0;
+    }
+
+}
+@media only screen and(max-width:520px){
+    .search-for-bus{
+        margin:28% 0;
+    }
+
+}
+@media only screen and(max-width:475px){
+    .search-for-bus{
+        margin:30% 0;
+    }
+
+}
+@media only screen and(max-width:390px){
+    .search-for-bus{
+        margin:35% 0;
+    }
+
+}
+@media only screen and(max-width:340px){
+    .search-for-bus{
+        margin:45% 0;
+    }
+
+}

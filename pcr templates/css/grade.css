@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+.container {
+  padding: 1em 0;
+  width: 700px;
+  margin: auto;
+}
+
+.container p {
+  font-size: 15px;
+}
+
+.container .semester-details {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .student-info {
+  margin: 1.5em 0;
+}
+
+.container .student-info P {
+  font-size: 15px;
+}
+
+.container .student-info .s-info-col {
+  margin-bottom: .5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 5% 55%;
+      grid-template-columns: 40% 5% 55%;
+}
+
+.container .grade-table {
+  position: relative;
+}
+
+.container .grade-table p {
+  font-size: 13px;
+}
+
+.container .grade-table .center {
+  padding-top: .7em;
+}
+
+.container .grade-table .grade-table-heading {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7% 10% 25% 10% 13% 10% 10% 15%;
+      grid-template-columns: 7% 10% 25% 10% 13% 10% 10% 15%;
+}
+
+.container .grade-table .grade-table-heading div {
+  text-align: center;
+  border: 1px solid black;
+  border-right: none;
+}
+
+.container .grade-table .grades {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7% 10% 25% 10% 13% 10% 10% 15%;
+      grid-template-columns: 7% 10% 25% 10% 13% 10% 10% 15%;
+}
+
+.container .grade-table .grades div {
+  text-align: center;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+}
+
+.b-r {
+  border-right: 1px solid black !important;
+}
+
+.n-b-b {
+  border-bottom: none !important;
+}
+
+.total-gpa-abs {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+}
+/*# sourceMappingURL=grade.css.map */

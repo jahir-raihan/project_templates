@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+.ticket-container{
+    width:fit-content;
+    
+    height:fit-content;
+    margin:10% auto;
+
+    .ticket{
+        width:800px;
+        border:1px solid rgba(0, 0, 0, 0.264);
+        margin: auto;
+        opacity: .8;
+        
+        .ticket-header{
+            padding: .8em .5em;
+            display: flex;
+            background:#f0f2f5;
+           
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.264);;
+        }
+        .ticket-body{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            .sec-1{
+                margin-left:.5em;
+                .box{
+                    width:200px;
+                    height:40px;
+                    border:1px solid rgba(0, 0, 0, 0.264);
+                    padding:.3em;
+                    margin:1em 0;
+                    border-radius: 4px;
+                    .box-con{
+                        
+                        margin-top:11px;
+                        padding-left:.2em;
+                        span{
+                            font-weight:550;
+                        }
+                    }
+                }
+                .boarding-point-head{
+                    
+                    width:fit-content;
+                    margin:1em auto .5em auto;
+                    p{
+                        font-size:22px;
+                        border-bottom: 1px solid black;
+                    }
+
+                    
+                }
+                p{
+                    margin:.5em 0;
+                }
+                .b-point{
+                    text-align: center;
+                    font-size:17px;
+                }
+                .bus-no{
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                .seats{
+                    height:fit-content;
+                    width:97%;
+                    .seat{
+    
+                        p{
+                            text-align: center;
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.264);
+                            padding-bottom:5px;
+                            margin:.3em 0;
+                        }
+                        .seat-container{
+                            display: grid;
+                            grid-template-columns:  50px 50px 50px 50px 50px;
+                        
+                        }
+                       
+                        
+                        .s-name{
+                            background:rgb(12, 169, 248);
+                            color:white;
+                            width:30px;
+                            font-size:14px;
+                            padding:.5em;
+                            text-align: center;
+                            margin: auto;
+                            margin:.3em auto;
+                            
+                            
+                        }
+                    }
+                }
+
+                .qr-code{
+                    width:100px;
+                    margin:6.1em 0 0 4.9em;
+                    height:100px;
+                    
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                    
+                }
+            }
+        }
+        .ticket-footer{
+            background:#f0f2f5;
+            border-top:1px solid rgba(0, 0, 0, 0.264);
+            .company-logo{
+                width:fit-content;
+                margin:auto;
+                padding:.8em 0;
+                .logo{
+                   
+                    display: flex;
+                    
+
+                    img{
+                        display: block;
+                        width:30px;
+                        height:30px;
+                    }
+                    p{
+                        margin:.5em 0 0 .4em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.download{
+    text-align: center;
+    button{
+        width:150px;
+        margin:2em auto;
+        padding:.5em .5em;
+        border:none;
+        color:white;
+        border-radius: 4px;
+        background:rgb(12, 169, 248);
+        cursor: pointer;
+    }
+}

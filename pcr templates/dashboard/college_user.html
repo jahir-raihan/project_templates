@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/css/side_nav.css">
+    <link rel="stylesheet" href="/css/create.css">
+    <link rel="stylesheet" href="/hostel_system/css/hostel.css">
+    <link rel="stylesheet" href='/css/search_result.css'>
+    <link rel="stylesheet" href="css/dashboard.css">
+   
+    <title>Base template</title>
+    <script src="/base.js"></script>
+    <script src="dashboard.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="nav">
+            <div class="nav-left">
+                <img id="logo" src="/images/Logo.jpg" alt="">
+                <p class="logo-text">Compact Polytechinc Institute</p>
+            </div>
+
+            <div class="nav-right">
+                <a href="#" style="margin-right:.8em">
+
+                    <div class="notification-icon">
+                    
+                        <img src="/images/bell.png" alt="">
+                        <p class="n-number">9</p>
+                        
+                    </div>
+                </a>
+
+                <div class="profile-icon">
+                    <img src="/images/joy.jpeg" alt="">
+                </div>
+            </div>
+
+            <div  class="toggle">
+                <div class="ham-bar"  onclick="myFunction()" title="menu">
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                </div>
+                
+
+                <div id="toggle-nav"  class="">
+
+                    <div class="contents">
+
+                    
+
+                        
+                        <div class="toggle-profile-link">
+                            <a href="#">
+                                <img src="images/joy.jpeg" alt="">
+                                <p class="name-title">Jahir Raihan</p>
+
+                            </a>
+                        </div>
+                        
+
+                        <div class="result-link">
+                            <div onclick="resultF()" class="title">
+                                <div onclick="rbg()" id="result-i-t" class="inner-title">
+                                    <p>Results</p>
+                                    <p>>></p>
+                                </div>
+                                
+                               
+                            </div>
+
+                            
+
+                            
+                            <div id="r-semesters"  class="semesters">
+                                <div class="r-s-c">
+                                    <ul>
+                                    
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           
+
+                        </div>
+                        
+                        <div class="exam-routines">
+                            <div onclick="routineF()" class="title">
+                                <div onclick="ebg()" id="exam-i-t" class="inner-title">
+                                    <p>Exam Routines</p>
+                                    <p>>></p>
+                                </div>
+                                
+                               
+                            </div>
+
+                            
+
+                            
+                            <div id="e-semesters"  class="semesters">
+                                <div class="r-s-c">
+                                    <ul>
+                                    
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                        <li><a href="#">1th semester </a> <p>>></p> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                           
+
+                        </div>
+                        <div class="inner-title">
+                            <p>Fee Info</p>
+                            <p>>></p>
+                        </div>
+
+                        <a href="upload_result.html">
+
+                            <div class="inner-title">
+                                <p>Upload Result</p>
+                                <p>>></p>
+                            </div>
+                        </a>
+
+                        <a href="upload_result.html">
+                            <div class="inner-title">
+                                <p>Upload Grade</p>
+                                <p>>></p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                
+                
+            </div>
+
+
+        
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="left">
+
+        
+
+            <div class="left-side">
+
+
+                <div class="side-profile-link">
+                    <a href="#">
+                        <img src="/images/joy.jpeg" alt="">
+                        <p class="name-title">Jahir Raihan Joy</p>
+
+                    </a>
+                </div>
+
+                <div class="result-link">
+                    <div onclick="sideresultF()" class="title">
+                        <div onclick="srbg()" id="side-result-i-t" class="side-inner-title">
+                            <img  src="/images/result.png" alt="">
+                            <p>Results</p>
+                            
+                        </div>
+                        
+                    
+                    </div>
+
+                    
+
+                    
+                    <div id="side-r-semesters"  class="semesters">
+                        <div class="r-s-c">
+                            <ul>
+                            
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                
+
+                </div>
+                
+                <div class="exam-routines">
+                    <div onclick="sideroutineF()" class="title">
+                        <div onclick="sebg()" id="side-exam-i-t" class="side-inner-title">
+                            <img src="/images/result.png" alt="">
+                            <p>Exam Routines</p>
+                            
+                        </div>
+                        
+                    
+                    </div>
+
+                    
+
+                    
+                    <div id="side-e-semesters"  class="semesters">
+                        <div class="r-s-c">
+                            <ul>
+                            
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                <li><a href="#">1th semester  <p>>></p> </a> </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                
+
+                </div>
+
+                <div class="side-inner-title">
+                    <img src="/images/accounting.png" alt="">
+                    <p>Fee Info</p>
+                    
+                </div>
+
+                <a href="upload_result.html">
+                    <div class="side-inner-title">
+                        <img src="/images/568717.svg" alt="">
+                        <p>Upload Result sheet</p>
+                        
+                    </div>
+                </a>
+
+                <a href="upload_result.html">
+                    <div class="side-inner-title">
+                        <img src="/images/568717.svg" alt="">
+                        <p>Upload Grade sheet</p>
+                        
+                    </div>
+                </a>
+
+            </div>
+            
+        </div>
+
+        <div class="main-body">
+
+            <div class="main">
+                <div class="links">
+                    <button class='link-btn1 '>Semester System</button>
+                    <button class='link-btn2 '>Hostel System</button>
+                    <button class='link-btn3 active'>College & User System</button>
+                </div>
+
+                <div class="dashboard-contents .create-post-body">
+                    <div class="update-hostel-data">
+    
+                        <p class="d-c-title-u-h-data">Add a new teacher:</p>
+                        <button class="d-c-btn" onclick="on()"><a href="#">Add teacher</a></button>
+
+                    </div>
+                    <div class="line"></div>
+                    
+                    <p class="d-c-title">User / Teacher</p>
+
+                    <div class="search-add-bar">
+                        <div class="input">
+                            <input type="text" placeholder="Query Teacher . . ." name="keyword">
+                        </div>
+
+                        <button class="add-btn search-btn">Search</button>
+                        
+
+                    </div>
+
+                    <div class="hostel-students">
+                    
+                 
+                   
+                        <div class="h-student">
+
+                            <div class="h-s-left">
+                                <div class="img">
+                                    <img src="/images/joy.jpeg" alt="">
+                                </div>
+                                <div >
+                                    <p class="name">Chandan banik</p>
+      
+                                        <small><span>BSC in CSE</small>
+                                        <small><span>Number :</span> 01687277560</small>
+                                
+                                        
+                                        <small><span>Email :</span> chandanfci10@gmail.com</small>
+                                    
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="opitons">
+
+                                <div onclick="odots()" class="dots odots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+    
+                                <div id='toggle-option' class="option-toggle">
+                                    <a href="view.html">view profile</a>
+                                    
+                                </div>
+    
+                            </div>
+                            
+                              
+                        </div>
+                        <div class="h-student">
+
+                            <div class="h-s-left">
+                                <div class="img">
+                                    <img src="/images/joy.jpeg" alt="">
+                                </div>
+                                <div >
+                                    <p class="name">Asaduzzaman </p>
+      
+                                        <small><span>BSC in CSE</small>
+                                        <small><span>Number :</span> 01687277560</small>
+                                
+                                        
+                                        <small><span>Email :</span> chandanfci10@gmail.com</small>
+                                    
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="opitons">
+
+                                <div onclick="odots()" class="dots odots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+    
+                                <div id='toggle-option' class="option-toggle">
+                                    <a href="view.html">view profile</a>
+                                    
+                                </div>
+    
+                            </div>
+                            
+                              
+                        </div>
+                        
+                       
+                        
+                    </div>
+                    <div class="line"></div>
+                    <div class="update-hostel-data">
+    
+                        <p class="d-c-title-u-h-data">Add a student:</p>
+                        <button class="d-c-btn" onclick="on1()"><a href="#">Add Student</a></button>
+
+                    </div>
+                    <div class="line"></div>
+                    <p class="d-c-title">User / Student</p>
+
+                    <div class="search-add-bar">
+                        <div class="input">
+                            <input type="text" placeholder="Query Students . . ." name="keyword">
+                        </div>
+
+                        <button class="add-btn search-btn">Search</button>
+                        
+
+                    </div>
+
+                    <div class="hostel-students">
+                    
+                 
+                   
+                        <div class="h-student">
+
+                            <div class="h-s-left">
+                                <div class="img">
+                                    <img src="/images/joy.jpeg" alt="">
+                                </div>
+                                <div >
+                                    <p class="name">jahir Raihan</p>
+      
+                                        <small><span>Roll: 484528</small>
+                                        <small><span>Department :</span>CST</small>
+                                        <small><span>Semester : 4th</span></small>    
+                                        
+                                        <small><span>Email :</span> raihan.joy10@gmail.com</small>
+                                    
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="opitons">
+
+                                <div onclick="odots()" class="dots odots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+    
+                                <div id='toggle-option' class="option-toggle">
+                                    <a href="view.html">view profile</a>
+                                    
+                                </div>
+    
+                            </div>
+                            
+                              
+                        </div>
+                      
+                        <div class="h-student">
+
+                            <div class="h-s-left">
+                                <div class="img">
+                                    <img src="/images/joy.jpeg" alt="">
+                                </div>
+                                <div >
+                                    <p class="name">jahir Raihan</p>
+      
+                                        <small><span>Roll: 484528</small>
+                                        <small><span>Department :</span>CST</small>
+                                        <small><span>Semester : 4th</span></small>    
+                                        
+                                        <small><span>Email :</span> raihan.joy10@gmail.com</small>
+                                    
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="opitons">
+
+                                <div onclick="odots()" class="dots odots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+    
+                                <div id='toggle-option' class="option-toggle">
+                                    <a href="view.html">view profile</a>
+                                    
+                                </div>
+    
+                            </div>
+                            
+                              
+                        </div>
+                      
+                        
+                       
+                        
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="college-system">
+                        <div class="college-system-heading">
+                            <h4>Collge System</h4>
+                        </div>
+                        <div class="update-hostel-data">
+
+                            <p class="d-c-title-u-h-data">Upload Exam Routine:</p>
+                            <button class="d-c-btn"><a href="#">Upload Exam Routine</a></button>
+    
+                        </div>
+                        <div class="update-hostel-data">
+    
+                            <p class="d-c-title-u-h-data">Upload Class Routine:</p>
+                            <button class="d-c-btn"><a href="#">Upload Class Routine</a></button>
+    
+                        </div>
+                        <div class="update-hostel-data">
+    
+                            <p class="d-c-title-u-h-data">Upload Result Sheet:</p>
+                            <button class="d-c-btn"><a href="#">Upload Result Sheet</a></button>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+                
+            <div id="overlay1" > 
+
+                <div id="overlay-content">
+                    <div class="create-post-body overlay-body">
+
+                        <div class="search-top">
+                            <div class="s-top-logo">
+                                <img draggable="false" src="/images/Logo.jpg" alt="">
+                            </div>
+
+                            <div class="s-top-titles">
+                                <p class="college-name">Compact Polytechinc Institute</p>
+                                <p class="info">Add a Teacher</p>
+                                
+                            </div>
+                            <div class="line"></div>
+                            
+
+                        </div>
+                        <form method="post" action="">
+
+                            <div class="search-middle">
+                                
+                                    <div class="input">
+                                        <span>Name :</span> <input name="name" placeholder="Enter full name . . ."  type="text">
+                                    </div>
+                                    <div class="input">
+                                        <span>Education :</span> <input name="education" placeholder="Ex: BSC in CSE " type="text">
+                                    </div>
+                                    <div class="input">
+                                        <span>Number :</span> <input name="phone" placeholder="Enter contact number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Email :</span> <input name="email" placeholder="Enter valid email . . ." type="email">
+                                    </div>
+                                    <div class="input">
+                                        <span>Image :</span> <input class="image-input" name="image" placeholder="Choose image . . ." type="file">
+                                    </div>
+                                    <div class="input">
+                                        <span>Password :</span> <input name="password1" placeholder="Enter password . . ." type="password">
+                                    </div>
+                                    <div class="input">
+                                        <span>Confirm <br> password :</span> <input hidden name="password2" placeholder="Confirm password . . ." type="password">
+                                    </div>
+
+                                
+                            </div>
+
+                            <div class="search-bottom">
+                                
+                                <button type="submit">Submit</button>
+                            </div>
+
+                        </form>
+
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="cross" onclick="off()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.946" height="20.534" viewBox="0 0 14.946 14.534">
+                        <g id="Group_164" data-name="Group 164" transform="translate(-7724.46 -7932.419)">
+                          <line id="Line_55" data-name="Line 55" x2="12.867" y2="12.372" transform="translate(7725.5 7933.5)" fill="none" stroke="#000" stroke-width="2"/>
+                          <line id="Line_56" data-name="Line 56" y1="12.372" x2="12.867" transform="translate(7725.5 7933.5)" fill="none" stroke="#000" stroke-width="2"/>
+                        </g>
+                      </svg>
+                  </div>
+            </div>
+            <div id="overlay2" > 
+
+                <div id="overlay-content">
+                    <div class="create-post-body overlay-body">
+
+                        <div class="search-top">
+                            <div class="s-top-logo">
+                                <img draggable="false" src="/images/Logo.jpg" alt="">
+                            </div>
+
+                            <div class="s-top-titles">
+                                <p class="college-name">Compact Polytechinc Institute</p>
+                                <p class="info">Add a Student</p>
+                                
+                            </div>
+                            <div class="line"></div>
+                            
+
+                        </div>
+                        <form  action="">
+
+                            <div class="search-middle">
+                                
+                                    <div class="input">
+                                        <span>Name :</span> <input name="name" placeholder="Enter full name . . ."  type="text">
+                                    </div>
+                                   <div class="input">
+                                        <span>Email :</span> <input name="email" placeholder="Enter valid email . . ." type="email">
+                                    </div>
+                                    <div class="input">
+                                        <span>Number :</span> <input name="phone" placeholder="Enter contact number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Roll :</span> <input name="phone" placeholder="Enter roll number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Registration :</span> <input name="phone" placeholder="Enter registration number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Semester :</span> <input name="phone" placeholder="Enter contact number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Department :</span> <input name="phone" placeholder="Enter contact number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Gender :</span> <input name="phone" placeholder="Enter contact number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Religion :</span> <input name="phone" placeholder="Enter contact number . . ." type="number">
+                                    </div>
+                                    <div class="input">
+                                        <span>Image :</span> <input name="phone" placeholder="Enter contact number . . ." type="number">
+                                    </div>
+                                    
+                                    <div class="input">
+                                        <span>Password :</span> <input name="password1" placeholder="Enter password . . ." type="password">
+                                    </div>
+                                    <div class="input">
+                                        <span>Confirm <br> password :</span> <input name="password2" placeholder="Confirm password . . ." type="password">
+                                    </div>
+
+                                
+                            </div>
+
+                            <div class="search-bottom">
+                                
+                                <button type="submit">Submit</button>
+                            </div>
+
+                        </form>
+
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="cross" onclick="off1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.946" height="20.534" viewBox="0 0 14.946 14.534">
+                        <g id="Group_164" data-name="Group 164" transform="translate(-7724.46 -7932.419)">
+                          <line id="Line_55" data-name="Line 55" x2="12.867" y2="12.372" transform="translate(7725.5 7933.5)" fill="none" stroke="#fff" stroke-width="3"/>
+                          <line id="Line_56" data-name="Line 56" y1="12.372" x2="12.867" transform="translate(7725.5 7933.5)" fill="none" stroke="#fff" stroke-width="3"/>
+                        </g>
+                      </svg>
+                  </div>
+            </div>
+            <div id="overlay3" > 
+
+                <div id="overlay-content">
+                    <div class="create-post-body overlay-body">
+
+                        <div class="search-top">
+                            <div class="s-top-logo">
+                                <img draggable="false" src="/images/Logo.jpg" alt="">
+                            </div>
+
+                            <div class="s-top-titles">
+                                <p class="college-name">Compact Polytechinc Institute</p>
+                                <p class="info">Confirmation</p>
+                                
+                            </div>
+                            <div class="line"></div>
+                            
+
+                        </div>
+                        <form  action="">
+
+                            <div class="search-middle">
+                                    <small class="confirm-text">**Confirmation code has been sent to your email.</small>
+                                    <div class="input">
+                                        <span>Enter code :</span> <input name="name" placeholder="Enter code . . ."  type="password">
+                                    </div>
+                                   
+                                  
+                                
+                            </div>
+
+                            <div class="search-bottom">
+                                
+                                <button type="submit">Submit</button>
+                            </div>
+
+                        </form>
+
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="cross" onclick="off1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.946" height="20.534" viewBox="0 0 14.946 14.534">
+                        <g id="Group_164" data-name="Group 164" transform="translate(-7724.46 -7932.419)">
+                          <line id="Line_55" data-name="Line 55" x2="12.867" y2="12.372" transform="translate(7725.5 7933.5)" fill="none" stroke="#fff" stroke-width="3"/>
+                          <line id="Line_56" data-name="Line 56" y1="12.372" x2="12.867" transform="translate(7725.5 7933.5)" fill="none" stroke="#fff" stroke-width="3"/>
+                        </g>
+                      </svg>
+                  </div>
+            </div>
+            <div id="overlay4" > 
+
+                <div id="overlay-content">
+                    <div class="create-post-body overlay-body">
+
+                        <div class="search-top">
+                            <div class="s-top-logo">
+                                <img draggable="false" src="/images/Logo.jpg" alt="">
+                            </div>
+
+                            <div class="s-top-titles">
+                                <p class="college-name">Compact Polytechinc Institute</p>
+                                <p class="info">Authenticate</p>
+                                
+                            </div>
+                            <div class="line"></div>
+                            
+
+                        </div>
+                        <form  action="">
+
+                            <div class="search-middle">
+                                    <small class="confirm-text">**Confirm your password</small>
+                                    <div class="input">
+                                        <span>Enter password :</span> <input name="password" placeholder="Enter password . . ."  type="password">
+                                        <input  hidden type="email" name="email" value='{{request.user.email}}'> 
+                                    </div>
+                                   
+                                  
+                                
+                            </div>
+
+                            <div class="search-bottom">
+                                
+                                <button type="submit">Submit</button>
+                            </div>
+
+                        </form>
+
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="cross" onclick="off1()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.946" height="20.534" viewBox="0 0 14.946 14.534">
+                        <g id="Group_164" data-name="Group 164" transform="translate(-7724.46 -7932.419)">
+                          <line id="Line_55" data-name="Line 55" x2="12.867" y2="12.372" transform="translate(7725.5 7933.5)" fill="none" stroke="#fff" stroke-width="3"/>
+                          <line id="Line_56" data-name="Line 56" y1="12.372" x2="12.867" transform="translate(7725.5 7933.5)" fill="none" stroke="#fff" stroke-width="3"/>
+                        </g>
+                      </svg>
+                  </div>
+            </div>
+        </div>
+
+        <div class="right">
+
+            
+            <div class="right-side">
+                <small>Advartistment</small>
+                <a href="#">
+                    
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="/base.js"></script>
+
+
+</body>
+</html>
+
